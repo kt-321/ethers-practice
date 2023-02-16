@@ -1,0 +1,140 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "x",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "y",
+						"type": "uint256"
+					}
+				],
+				"name": "addition",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "a",
+						"type": "uint256"
+					}
+				],
+				"name": "useMemory",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "useStorage1",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "v1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "v2",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "v3",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "useStorage2",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "v1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "v2",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "v3",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/TryInlineAssembly.sol": "TryInlineAssembly"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/TryInlineAssembly.sol": {
+			"keccak256": "0xe53a9be70a5c6901ebb39942bae3d4913bea7f3a9df51f2cffca81fc38c404e7",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://7df7faf38d0a668d70f0aa9a056411c604df14a8524918fa1881cdffead2115c",
+				"dweb:/ipfs/QmTZNtiSaiBZeiKAC2s1SxuoQwqVVEgawfyqKpbfW5fvHf"
+			]
+		}
+	},
+	"version": 1
+}
