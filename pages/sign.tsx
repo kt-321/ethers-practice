@@ -13,15 +13,19 @@ export default function Sign() {
     const contractAddr = '0xCA3c9cAB433F35d5C3f9118c6b9365662D7CB96d'
 
     useEffect(() => {
-        const provider = new ethers.providers.Web3Provider(window.ethereum);
-        const signer = provider.getSigner();
-        const contract = new ethers.Contract(contractAddr, abi, signer);
-        const filter = contract.filters.Transfer(null, null);
-        contract.on(filter, (_from:string, _to:string, _amount: any) => {
-            console.log("from: ", _from);
-            console.log("_to: ", _to);
-            console.log("_amount: ", _amount);
-        });
+        (async() => {
+            const provider = new ethers.providers.Web3Provider(window.ethereum);
+            const signer = provider.getSigner();
+            const address = await signer.getAddress();
+            console.log("address:", address)
+            const contract = new ethers.Contract(contractAddr, abi, signer);
+            const filter = contract.filters.Transfer(ethers.constants.AddressZero, address);
+            contract.on(filter, (_from:string, _to:string, _amount: any) => {
+                console.log("from: ", _from);
+                console.log("_to: ", _to);
+                console.log("_amount: ", _amount);
+            });
+        })()
     }, []);
 
     const onClick = async () => {
